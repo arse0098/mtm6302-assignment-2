@@ -1,0 +1,52 @@
+#modal {
+    display: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 1;
+}
+
+#modal img {
+    display: block;
+    margin: auto;
+    height: 90%;
+}
+
+#modal span {
+    color: white;
+    font-size: 45px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#images {
+    display: grid;
+}
+
+#images img{
+    width: 70%;
+    margin: auto;
+    padding: 2rem 0 2rem 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#images img:hover {
+    transform: scale(1.1)
+}
+
+@media (min-width: 640px) {
+    #images {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+@media (min-width: 900px) {
+    #images {
+        grid-template-columns: auto auto auto auto;
+    }
+}
